@@ -22,11 +22,10 @@ jobs:
             on:
               branch: main
       script:
-        - tree
+        - apt install tree && tree
         - cd python
         - python hello_world.py
         - pip install -r requirements.txt
-        - ls -R
     - name: Python with two level Output Directory and Input directory provided
       os: linux
       dist: focal
@@ -49,8 +48,7 @@ jobs:
             on:
               branch: main
       script:
-        - tree
+        - apt install tree && tree
         - cd python
         - python hello_world.py
         - pip install -r requirements.txt
-        - ls -R
