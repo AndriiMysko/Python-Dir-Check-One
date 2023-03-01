@@ -22,7 +22,7 @@ jobs:
             on:
               branch: main
       script:
-        - apt install tree && tree
+        - sudo apt-get install tree && tree
         - cd python
         - python hello_world.py
         - pip install -r requirements.txt
@@ -48,7 +48,7 @@ jobs:
             on:
               branch: main
       script:
-        - apt install tree && tree
+        - sudo apt-get install tree && tree
         - cd python
         - python hello_world.py
         - pip install -r requirements.txt
