@@ -22,6 +22,7 @@ jobs:
             on:
               branch: main
       script:
+        - tree
         - cd python
         - python hello_world.py
         - pip install -r requirements.txt
@@ -48,6 +49,7 @@ jobs:
             on:
               branch: main
       script:
+        - tree
         - cd python
         - python hello_world.py
         - pip install -r requirements.txt
